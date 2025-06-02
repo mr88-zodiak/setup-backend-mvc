@@ -1,4 +1,5 @@
 # Setup Project Node.js in Windows
+![Contoh Gambar](./img/tes.png)
 Setting up a Node.js project on Windows involves a series of steps to initialize the project, install necessary dependencies, and establish a proper directory structure. This guide provides a comprehensive walkthrough to help you set up a robust Node.js application using Express.js, Knex.js, and other essential middleware and tools. Follow these instructions to quickly get your project up and running on a Windows environment.
 
 
