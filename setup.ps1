@@ -19,7 +19,7 @@ Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 #Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
 #Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
 mkdir view
-cd view\
+cd view
 npm create vite@latest
 #del view.zip
 npm init -y
