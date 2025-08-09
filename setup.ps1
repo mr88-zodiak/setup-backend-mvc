@@ -17,7 +17,7 @@ Invoke-WebRequest -Uri "https://rb.gy/eaghe3" -OutFile "router\router.js"
 Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 
 #Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
-Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
+#Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
 cd view\view
 $pilih = Read-Host "Mau install tailwindcss?[Y::N]"
 if ($pilih.ToUpper() -eq "Y"){
