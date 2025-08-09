@@ -18,18 +18,18 @@ Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 
 #Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
 #Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
-cd view\view
-$pilih = Read-Host "Mau install tailwindcss?[Y::N]"
-if ($pilih.ToUpper() -eq "Y"){
-    npm install -D tailwindcss
-    npx tailwindcss init
-    $ask = read-host "jalankan tailwindcss sekarang? [Y:N]"
-    if ($ask.ToUpper() -eq "Y"){
-         npx tailwindcss -i ./css/input.css -o ./css/style.css -- watch
-    }
-}
-cd .. 
-cd ..
+# cd view\view
+# $pilih = Read-Host "Mau install tailwindcss?[Y::N]"
+# if ($pilih.ToUpper() -eq "Y"){
+#     npm install -D tailwindcss
+#     npx tailwindcss init
+#     $ask = read-host "jalankan tailwindcss sekarang? [Y:N]"
+#     if ($ask.ToUpper() -eq "Y"){
+#          npx tailwindcss -i ./css/input.css -o ./css/style.css -- watch
+#     }
+# }
+# cd .. 
+# cd ..
 #del view.zip
 npm init -y
 
