@@ -1,6 +1,10 @@
 
 Clear-Host
 
+
+$name = Read-Host "Project name: "
+mkdir $name
+cd $name
 New-Item -ItemType Directory -Path "api\models" -Force
 New-Item -ItemType Directory -Path "api\controller" -Force
 Invoke-WebRequest -Uri "https://bit.ly/4cS89PF" -OutFile "api\controller\UserController.js"
@@ -22,8 +26,8 @@ mkdir view
 cd view
 npm create vite@latest
 #del view.zip
+cd ..
 npm init -y
-
 npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon
 
 knex init
