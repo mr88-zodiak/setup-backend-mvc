@@ -1,7 +1,6 @@
 
 Clear-Host
 
-
 New-Item -ItemType Directory -Path "api\models" -Force
 New-Item -ItemType Directory -Path "api\controller" -Force
 Invoke-WebRequest -Uri "https://bit.ly/4cS89PF" -OutFile "api\controller\UserController.js"
@@ -17,7 +16,7 @@ Invoke-WebRequest -Uri "https://rb.gy/eaghe3" -OutFile "router\router.js"
 
 Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 
-Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
+#Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
 Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
 cd view\view
 $pilih = Read-Host "Mau install tailwindcss?[Y::N]"
@@ -31,12 +30,11 @@ if ($pilih.ToUpper() -eq "Y"){
 }
 cd .. 
 cd ..
-del view.zip
+#del view.zip
 npm init -y
 
 npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon
 
 knex init
 
-# Membuat file .env kosong
 New-Item -ItemType File -Path ".env"
