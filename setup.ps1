@@ -1,13 +1,7 @@
-# Bersihkan layar (tidak wajib, bisa dihapus jika tidak diperlukan)
+
 Clear-Host
 
-# Inisialisasi proyek Node.js
-npm init -y
 
-# Instalasi paket-paket yang diperlukan
-npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon
-
-# Membuat direktori dan mengunduh file dengan Invoke-WebRequest
 New-Item -ItemType Directory -Path "api\models" -Force
 New-Item -ItemType Directory -Path "api\controller" -Force
 Invoke-WebRequest -Uri "https://bit.ly/4cS89PF" -OutFile "api\controller\UserController.js"
@@ -38,7 +32,10 @@ if ($pilih.ToUpper() -eq "Y"){
 cd .. 
 cd ..
 del view.zip
-# Inisialisasi Knex
+npm init -y
+
+npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon
+
 knex init
 
 # Membuat file .env kosong
