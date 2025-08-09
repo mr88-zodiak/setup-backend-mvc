@@ -18,7 +18,9 @@ Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 
 #Invoke-WebRequest -Uri "https://shorturl.at/QmDBV" -OutFile "view.zip"
 #Expand-Archive -Path "view.zip" -DestinationPath "view" -Force
-# cd view\view
+mkdir view
+cd view\view
+npm create vite@latest
 # $pilih = Read-Host "Mau install tailwindcss?[Y::N]"
 # if ($pilih.ToUpper() -eq "Y"){
 #     npm install -D tailwindcss
@@ -28,8 +30,8 @@ Invoke-WebRequest -Uri "https://bit.ly/3Tfc9Tn" -OutFile "index.js"
 #          npx tailwindcss -i ./css/input.css -o ./css/style.css -- watch
 #     }
 # }
-# cd .. 
-# cd ..
+cd .. 
+
 #del view.zip
 npm init -y
 
