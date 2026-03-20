@@ -28,7 +28,7 @@ npm create vite@latest
 #del view.zip
 cd ..
 npm init -y
-npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon
+npm install express knex morgan cors pg bcrypt jsonwebtoken express-validator dotenv nodemon objection
 
 knex init
 
